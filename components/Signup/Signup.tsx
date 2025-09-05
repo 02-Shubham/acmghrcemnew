@@ -58,7 +58,7 @@ function Signup() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Join us at <span className="text-orange-400 font-extrabold">Ecell</span>
+          Join us at <span className="text-orange-400 font-extrabold">ACM</span>
         </motion.h1>
       </div>
       <motion.div

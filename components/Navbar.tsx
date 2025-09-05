@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import * as HoverCard from "@radix-ui/react-hover-card";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // import icons for the hamburger menu
 import Link from "next/link";
-import logo from '../public/Ecelllogo.jpg';
+// import logo from '../public/ACMlogo.jpg';
 import Image from 'next/image';
 
 function Navbar({ className }: { className?: string }) {
@@ -97,7 +97,7 @@ function Navbar({ className }: { className?: string }) {
       {/* Hamburger Navbar */}
       <div className="w-[100vw] fixed top-0 z-50 mt-8 text-white  xl:hidden flex justify-between items-center px-4">
         <div className="flex items-center">
-        <Image src={logo} alt="College Club" width={50} height={50} />
+        {/* <Image src={logo} alt="College Club" width={50} height={50} /> */}
           {/* <span className="text-2xl font-bold"></span> */}
         </div>
         <div className="flex items-center">

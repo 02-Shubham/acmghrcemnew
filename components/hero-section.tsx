@@ -17,7 +17,7 @@ export const products = [
     title: "Moonbeam",
     link: "/",
     thumbnail:
-      "/Ecelllogo.jpg",
+      "/ACMlogo.jpg",
   },
   {
     title: "Cursor",

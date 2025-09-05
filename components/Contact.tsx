@@ -115,7 +115,7 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Mail className="text-orange-400 w-6 h-6" />
-                  <span>ecell@ghrcem.raisoni.net</span>
+                  <span>ACM@ghrcem.raisoni.net</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone className="text-orange-400 w-6 h-6" />

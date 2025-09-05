@@ -49,7 +49,7 @@ function Login() {
             transition={{ duration: 1, delay: 0.0 }}
           >
             Welcome back to{" "}
-            <span className="text-orange-500 font-extrabold">Ecell</span>
+            <span className="text-orange-500 font-extrabold">ACM</span>
           </motion.h1>
         </div>
         <motion.div
