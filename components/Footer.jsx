@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { MenuItem } from "./ui/navbar-menu";
-import logo from '../public/white transperent.png';
+import logo from '@/public/ACMlogo1.png';
 import { FaInstagram, FaTwitter, FaGithub, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
