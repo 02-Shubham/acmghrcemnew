@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 import { HeroParallax } from "@/components/hero-parallax";
+import Demo from "./demo";
 
 const Hero=()=> {
     return (
-        <div>
+        <div className="bg-[rgba(16,18,24,1)]">
+         <Demo />
          <HeroParallax products={products} />
         </div>
     );
@@ -40,67 +42,67 @@ export const products = [
     title: "Editrix AI",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      "/event5.jpg",
   },
   {
     title: "Pixel Perfect",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "/event7.jpg",
   },
  
   {
     title: "Algochurn",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      "/event6.jpg",
   },
   {
     title: "Aceternity UI",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      "/event4.png",
   },
   {
     title: "Tailwind Master Kit",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      "/event8.jpg",
   },
   {
     title: "SmartBridge",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+      "/event9.jpg",
   },
   {
     title: "Renderwork Studio",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+      "/event10.jpg",
   },
   {
     title: "Creme Digital",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      "/event8.jpg",
   },
   {
     title: "Golden Bells Academy",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+      "/event6.jpg",
   },
   {
     title: "Invoker Labs",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+      "/event9.jpg",
   },
   {
     title: "E Free Invoice",
     link: "/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+      "/event5.jpg",
   },
 ];
