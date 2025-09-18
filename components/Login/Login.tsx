@@ -49,18 +49,18 @@ function Login() {
             transition={{ duration: 1, delay: 0.0 }}
           >
             Welcome back to{" "}
-            <span className="text-orange-500 font-extrabold">ACM</span>
+            <span className="text-blue-500 font-extrabold">ACM</span>
           </motion.h1>
         </div>
         <motion.div
           whileHover={{
-            boxShadow: "0 0 10px #ff8a00",
+            boxShadow: "0 0 10px #1e90ff",
           }}
           className="w-full max-w-md h-auto bg-[#161616] rounded-lg flex flex-col items-center p-6"
         >
           <div>
             <motion.h1
-              className="text-3xl text-orange-800 font-extrabold my-5"
+              className="text-3xl text-blue-800 font-extrabold my-5"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -92,10 +92,10 @@ function Login() {
                     <motion.input
                       type="email"
                       name="email"
-                      className="text-white bg-transparent border-[1px] border-orange-600 rounded-full p-2 w-full mt-1"
+                      className="text-white bg-transparent border-[1px] border-blue-600 rounded-full p-2 w-full mt-1"
                       required
                       whileFocus={{
-                        boxShadow: "0 0 10px #ff8a00",
+                        boxShadow: "0 0 10px #1e90ff",
                       }}
                     />
                   </Form.Control>
@@ -137,10 +137,10 @@ function Login() {
                     <motion.input
                       type={showPassword ? "text" : "password"}
                       name="password"
-                      className="text-white bg-transparent border-[1px] border-orange-600 rounded-full p-2 w-full mt-1"
+                      className="text-white bg-transparent border-[1px] border-blue-600 rounded-full p-2 w-full mt-1"
                       required
                       whileFocus={{
-                        boxShadow: "0 0 10px #ff8a00",
+                        boxShadow: "0 0 10px #1e90ff",
                       }}
                     />
                   </Form.Control>
@@ -165,7 +165,7 @@ function Login() {
               >
                 <Form.Submit asChild>
                   <button
-                    className="text-white bg-orange-500 rounded-full w-3/4 p-2 mt-4  font-bold text-center"
+                    className="text-white bg-blue-500 rounded-full w-3/4 p-2 mt-4  font-bold text-center"
                     disabled={loading}
                   >
                     {loading ? "Signing In..." : "Login"}
@@ -188,7 +188,7 @@ function Login() {
         </motion.div>
         <h1 className="text-lg mt-4 text-center">
           Create an account?{" "}
-          <span className="text-orange-600 font-extrabold">
+          <span className="text-blue-600 font-extrabold">
             <Link href="/Auth/Signup">Sign Up</Link>
           </span>
         </h1>

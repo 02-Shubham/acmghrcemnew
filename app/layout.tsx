@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ACM",
-  description: "Association for E-cell  at GH Raisoni College of Engineering and Management",
+  description: "Association for ACM  at GH Raisoni College of Engineering and Management",
 };
 
 export default function RootLayout({

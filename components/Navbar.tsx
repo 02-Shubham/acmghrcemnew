@@ -17,7 +17,7 @@ function Navbar({ className }: { className?: string }) {
   const menuItems = (
     <>
       <motion.div
-        whileHover={{ scale: 1.1, color: "#ff8a00" }}
+        whileHover={{ scale: 1.1, color: "#1e90ff" }}
         whileTap={{ scale: 0.9 }}
         className="mx-4 cursor-pointer"
       >
@@ -26,7 +26,7 @@ function Navbar({ className }: { className?: string }) {
         </Link>
       </motion.div>
       <motion.div
-        whileHover={{ scale: 1.1, color: "#ff8a00" }}
+        whileHover={{ scale: 1.1, color: "#1e90ff" }}
         whileTap={{ scale: 0.9 }}
         className="mx-4 cursor-pointer"
       >
@@ -35,7 +35,7 @@ function Navbar({ className }: { className?: string }) {
         </Link>
       </motion.div>
       <motion.div
-        whileHover={{ scale: 1.1, color: "#ff8a00" }}
+        whileHover={{ scale: 1.1, color: "#1e90ff" }}
         whileTap={{ scale: 0.9 }}
         className="mx-4 cursor-pointer"
       >
@@ -44,7 +44,7 @@ function Navbar({ className }: { className?: string }) {
         </Link>
       </motion.div>
       <motion.div
-        whileHover={{ scale: 1.1, color: "#ff8a00" }}
+        whileHover={{ scale: 1.1, color: "#1e90ff" }}
         whileTap={{ scale: 0.9 }}
         className="mx-4 cursor-pointer"
       >
@@ -57,7 +57,7 @@ function Navbar({ className }: { className?: string }) {
         </HoverCard.Root>
       </motion.div>
       <motion.div
-        whileHover={{ scale: 1.1, color: "#ff8a00" }}
+        whileHover={{ scale: 1.1, color: "#1e90ff" }}
         whileTap={{ scale: 0.9 }}
         className="mx-4 cursor-pointer"
       >
@@ -66,7 +66,7 @@ function Navbar({ className }: { className?: string }) {
         </Link>
       </motion.div>
       <motion.div
-        whileHover={{ scale: 1.1, color: "#ff8a00" }}
+        whileHover={{ scale: 1.1, color: "#1e90ff" }}
         whileTap={{ scale: 0.9 }}
         className="mx-4 cursor-pointer"
       >

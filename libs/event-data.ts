@@ -13,7 +13,7 @@ export type Event = {
 export const events: Event[] = [
   {
     id: '1',
-    title: 'Way to Mood Indigo 2K24',
+    title: 'Web Development 3 Day Workshop',
     date: 'December 10, 2024', // Assuming date
     time: '5:00 PM - 8:00 PM', // Assuming time
     location: 'IIT Bombay', // Assuming location
@@ -24,7 +24,7 @@ export const events: Event[] = [
   },
   {
     id: '2',
-    title: 'Pitching Competition 💡',
+    title: 'Inauguration Ceremony',
     date: 'February 15, 2025', // Assuming date
     time: '2:00 PM - 5:00 PM', // Assuming time
     location: 'Innovation Hub', // Assuming location
@@ -34,7 +34,7 @@ export const events: Event[] = [
   },
   {
     id: '3',
-    title: 'NEC Team',
+    title: 'Investiture Ceremony',
     date: 'February 20, 2025', // Assuming date
     time: '10:00 AM - 1:00 PM', // Assuming time
     location: 'Main Auditorium', // Assuming location
@@ -44,7 +44,57 @@ export const events: Event[] = [
   },
   {
     id: '4',
-    title: 'IPL Auction 2025 🏏',
+    title: 'Induction SY',
+    date: 'January 27, 2025', // Assuming date
+    time: '3:00 PM - 7:00 PM', // Assuming time
+    location: 'E-216 , E-318', // Assuming location
+    description: 'Experience the excitement of IPL Auction 2023 with live bidding and strategy discussions.',
+    type: 'past',
+    imageUrl: 'img/events/past/iplAuction.jpg'
+  },
+  {
+    id: '5',
+    title: 'Cloud Computing',
+    date: 'January 27, 2025', // Assuming date
+    time: '3:00 PM - 7:00 PM', // Assuming time
+    location: 'E-216 , E-318', // Assuming location
+    description: 'Experience the excitement of IPL Auction 2023 with live bidding and strategy discussions.',
+    type: 'past',
+    imageUrl: 'img/events/past/iplAuction.jpg'
+  },
+  {
+    id: '6',
+    title: 'Workshop on: Cyber Sentinels:Protecting Networks in the Age of AI',
+    date: 'January 27, 2025', // Assuming date
+    time: '3:00 PM - 7:00 PM', // Assuming time
+    location: 'E-216 , E-318', // Assuming location
+    description: 'Experience the excitement of IPL Auction 2023 with live bidding and strategy discussions.',
+    type: 'past',
+    imageUrl: 'img/events/past/iplAuction.jpg'
+  },
+  {
+    id: '7',
+    title: 'Demystifying the power of artificial intelligence for everyone',
+    date: 'January 27, 2025', // Assuming date
+    time: '3:00 PM - 7:00 PM', // Assuming time
+    location: 'E-216 , E-318', // Assuming location
+    description: 'Experience the excitement of IPL Auction 2023 with live bidding and strategy discussions.',
+    type: 'past',
+    imageUrl: 'img/events/past/iplAuction.jpg'
+  },
+  {
+    id: '8',
+    title: 'SkillUp with Flutter:Cross-Platfrom Development',
+    date: 'January 27, 2025', // Assuming date
+    time: '3:00 PM - 7:00 PM', // Assuming time
+    location: 'E-216 , E-318', // Assuming location
+    description: 'Experience the excitement of IPL Auction 2023 with live bidding and strategy discussions.',
+    type: 'past',
+    imageUrl: 'img/events/past/iplAuction.jpg'
+  },
+  {
+    id: '9',
+    title: 'Workshop on: Cyber Sentinels:Protecting Networks in the Age of AI',
     date: 'January 27, 2025', // Assuming date
     time: '3:00 PM - 7:00 PM', // Assuming time
     location: 'E-216 , E-318', // Assuming location

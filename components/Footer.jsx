@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
       <div className='items-center justify-center flex gap-16'>
       <div className="flex flex-col text-center md:text-left mb-8 md:mb-0">
-        <h3 className="mb-4 font-bold text-orange-500 text-lg">Connect With Us</h3>
+        <h3 className="mb-4 font-bold text-blue-500 text-lg">Connect With Us</h3>
         <ul className="list-none p-0 space-y-2">
           <li>
             <Link href={"/"}>

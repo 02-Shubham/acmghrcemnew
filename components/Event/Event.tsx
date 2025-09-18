@@ -28,12 +28,12 @@ export default function EventsPage({ initialEvents = [] }: { initialEvents?: Eve
       <section className="py-20 relative z-10 text-center">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <motion.h1
-            className="mb-6 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-pink-600"
+            className="mb-6 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, type: "spring" }}
           >
-            E-CELL Events
+            ACM Events
           </motion.h1>
           <motion.p
             className="text-xl text-gray-300"
@@ -61,7 +61,7 @@ export default function EventsPage({ initialEvents = [] }: { initialEvents?: Eve
                 onClick={() => setActiveFilter(filter as "all" | "past" | "future")}
                 className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 flex items-center space-x-2 ${
                   activeFilter === filter
-                    ? "bg-gradient-to-r from-orange-500 to-pink-600 text-white shadow-lg scale-105"
+                    ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg scale-105"
                     : "bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105"
                 }`}
                 whileHover={{ scale: 1.1, rotate: 5 }}
@@ -92,7 +92,7 @@ export default function EventsPage({ initialEvents = [] }: { initialEvents?: Eve
               ) : (
                 filteredEvents.map((event, index) => (
                   <div key={event.id} className="h-[40rem] w-full flex items-center justify-center">
-                    <PinContainer title="/ui.aceternity.com" href="https://twitter.com/mannupaaji">
+                    <PinContainer title="/" href="">
                       <motion.div
                         className="overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 shadow-xl rounded-xl mx-auto max-w-[400px] max-h-[600px] w-[300px] border border-gray-700"
                         initial={{ opacity: 0, y: 50 }}
@@ -111,7 +111,7 @@ export default function EventsPage({ initialEvents = [] }: { initialEvents?: Eve
                         )}
                         <div className="p-6">
                           <motion.h3
-                            className="mb-2 text-2xl font-bold text-orange-400"
+                            className="mb-2 text-2xl font-bold text-blue-400"
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
@@ -120,15 +120,15 @@ export default function EventsPage({ initialEvents = [] }: { initialEvents?: Eve
                           </motion.h3>
                           <div className="mb-4 space-y-2 text-gray-300">
                             <motion.div className="flex items-center space-x-2">
-                              <Calendar className="w-4 h-4 text-orange-400" />
+                              <Calendar className="w-4 h-4 text-blue-400" />
                               <span className="text-sm">{event.date}</span>
                             </motion.div>
                             <motion.div className="flex items-center space-x-2">
-                              <Clock className="w-4 h-4 text-orange-400" />
+                              <Clock className="w-4 h-4 text-blue-400" />
                               <span className="text-sm">{event.time}</span>
                             </motion.div>
                             <motion.div className="flex items-center space-x-2">
-                              <MapPin className="w-4 h-4 text-orange-400" />
+                              <MapPin className="w-4 h-4 text-blue-400" />
                               <span className="text-sm">{event.location}</span>
                             </motion.div>
                           </div>

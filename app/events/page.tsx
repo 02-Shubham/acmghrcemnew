@@ -91,7 +91,7 @@
 //                   translateZ={20}
 //                   as={Link}
 //                   href="https://forms.gle/2ZSwJCyU21PJQf5G6"
-//                   className="px-4 py-2 rounded-xl bg-orange-500 dark:bg-white dark:text-black text-white text-s font-bold"
+//                   className="px-4 py-2 rounded-xl bg-blue-500 dark:bg-white dark:text-black text-white text-s font-bold"
 //                 >
 //                   Register Now !!!
 //                 </CardItem>
@@ -103,7 +103,7 @@
 //                   translateZ={20}
 //                   as={Link}
 //                   href="https://forms.gle/2ZSwJCyU21PJQf5G6"
-//                   className="px-4 py-2 rounded-xl bg-orange-500 dark:bg-white dark:text-black text-white text-s font-bold"
+//                   className="px-4 py-2 rounded-xl bg-blue-500 dark:bg-white dark:text-black text-white text-s font-bold"
 //                 >
 //                   View !
 //                 </CardItem>

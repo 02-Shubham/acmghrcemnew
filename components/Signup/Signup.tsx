@@ -58,17 +58,17 @@ function Signup() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Join us at <span className="text-orange-400 font-extrabold">ACM</span>
+          Join us at <span className="text-blue-400 font-extrabold">ACM</span>
         </motion.h1>
       </div>
       <motion.div
         whileHover={{
-          boxShadow: "0 0 10px #ff8a00",
+          boxShadow: "0 0 10px #1e90ff",
         }}
         className="w-1/2 h-auto bg-[#161616] rounded-lg flex flex-col items-center p-6 max-[450px]:w-[90%] max-[700px]:w-3/4 min-[700px]:w-[65%] min-[1000px]:w-[50%]"
       >
         <motion.h1
-          className="text-3xl  text-orange-500 font-extrabold my-5"
+          className="text-3xl  text-blue-500 font-extrabold my-5"
           initial={{
             opacity: 0,
             y: -10,
@@ -107,10 +107,10 @@ function Signup() {
                 <Form.Control asChild>
                   <motion.input
                     type="email"
-                    className="text-white bg-transparent border-[1px] border-orange-600 rounded-full p-2 w-full mt-1"
+                    className="text-white bg-transparent border-[1px] border-blue-600 rounded-full p-2 w-full mt-1"
                     required
                     whileFocus={{
-                      boxShadow: "0 0 10px #ff8a00",
+                      boxShadow: "0 0 10px #1e90ff",
                     }}
                   />
                 </Form.Control>
@@ -157,10 +157,10 @@ function Signup() {
                 <Form.Control asChild>
                   <motion.input
                     type={showPassword ? "text" : "password"}
-                    className="text-white bg-transparent border-[1px] border-orange-600 rounded-full p-2 w-full mt-1"
+                    className="text-white bg-transparent border-[1px] border-blue-600 rounded-full p-2 w-full mt-1"
                     required
                     whileFocus={{
-                      boxShadow: "0 0 10px #ff8a00",
+                      boxShadow: "0 0 10px #1e90ff",
                     }}
                   />
                 </Form.Control>
@@ -186,7 +186,7 @@ function Signup() {
               className="w-3/4 mx-auto flex justify-center items-center"
             >
               <Form.Submit asChild>
-                <button className="text-white bg-orange-600 rounded-full w-3/4 p-2 mt-4  font-bold text-center">
+                <button className="text-white bg-blue-600 rounded-full w-3/4 p-2 mt-4  font-bold text-center">
                   Register
                 </button>
               </Form.Submit>
@@ -208,7 +208,7 @@ function Signup() {
       </motion.div>
       <h1 className="text-lg  mt-4">
         Already have an account?{" "}
-        <span className="text-orange-600 font-extrabold">
+        <span className="text-blue-600 font-extrabold">
           <Link href="/Auth/Login">Login</Link>
         </span>
       </h1>

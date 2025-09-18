@@ -4,7 +4,7 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "Being part of E-cell GHRCEM helped me gain the confidence to take my entrepreneurial ideas forward.",
+        "Being part of ACM GHRCEM helped me gain the confidence to take my entrepreneurial ideas forward.",
       name: "Sanjana Rajput",
       designation: "Btech-AIML",
       src: "/img/team/sanjana rajput.png",
@@ -18,7 +18,7 @@ export function AnimatedTestimonialsDemo() {
     },
     {
       quote:
-        "E-Cell GHRCEM sparked my passion for innovation. I also learned the importance of teamwork and strategic thinking.",
+        "ACM GHRCEM sparked my passion for innovation. I also learned the importance of teamwork and strategic thinking.",
       name: "Juned Pothawale",
       designation: "Btech-CS",
       src: "/img/team/juned.png",

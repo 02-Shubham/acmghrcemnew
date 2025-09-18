@@ -119,7 +119,7 @@ export default function TeamClient({ initialTeams }: TeamClientProps) {
       <section className="py-20 relative z-10">
         <div className="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
           <motion.h1
-            className="mb-6 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-pink-600"
+            className="mb-6 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, type: "spring" }}
@@ -132,7 +132,7 @@ export default function TeamClient({ initialTeams }: TeamClientProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, type: "spring", delay: 0.2 }}
           >
-            Meet the passionate individuals behind E-CELL 📈
+            Meet the passionate individuals behind ACM 📈
           </motion.p>
         </div>
       </section>
@@ -151,7 +151,7 @@ export default function TeamClient({ initialTeams }: TeamClientProps) {
                 onClick={() => setActiveTeam(teamName)}
                 className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 flex items-center space-x-2 ${
                   activeTeam === teamName
-                    ? "bg-gradient-to-r from-orange-500 to-pink-600 text-white shadow-lg scale-105"
+                    ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg scale-105"
                     : "bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105"
                 }`}
                 whileHover={{ scale: 1.1, rotate: 5 }}
@@ -200,7 +200,7 @@ export default function TeamClient({ initialTeams }: TeamClientProps) {
                         {member.name}
                       </motion.h3>
                       <motion.p
-                        className="font-medium text-orange-400"
+                        className="font-medium text-blue-400"
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
@@ -229,7 +229,7 @@ export default function TeamClient({ initialTeams }: TeamClientProps) {
                           href={member.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-orange-500 transition-colors duration-200"
+                          className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
                           whileHover={{ scale: 1.2, rotate: 360 }}
                           whileTap={{ scale: 0.9 }}
                         >
@@ -241,7 +241,7 @@ export default function TeamClient({ initialTeams }: TeamClientProps) {
                           href={member.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-orange-500 transition-colors duration-200"
+                          className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
                           whileHover={{ scale: 1.2, rotate: 360 }}
                           whileTap={{ scale: 0.9 }}
                         >
@@ -251,7 +251,7 @@ export default function TeamClient({ initialTeams }: TeamClientProps) {
                       {member.mail && (
                         <motion.a
                           href={`mailto:${member.mail}`}
-                          className="text-gray-400 hover:text-orange-500 transition-colors duration-200"
+                          className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
                           whileHover={{ scale: 1.2, rotate: 360 }}
                           whileTap={{ scale: 0.9 }}
                         >

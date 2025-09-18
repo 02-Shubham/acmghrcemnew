@@ -37,7 +37,7 @@ const content = [
     description:
       "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--blue-500),var(--yellow-500))] flex items-center justify-center text-white">
         Version control
       </div>
     ),
@@ -60,7 +60,7 @@ export default function StickyScrollRevealDemo() {
       <section className="py-20 relative z-10">
         <div className="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
           <motion.h1
-            className="mb-6 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-pink-600"
+            className="mb-6 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-pink-600"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, type: "spring" }}

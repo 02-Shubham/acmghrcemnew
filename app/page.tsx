@@ -6,8 +6,8 @@ import { AnimatedTestimonialsDemo } from "@/components/Testimonial";
 
 const content = [
   {
-    title: "E-Cell GHRCEM",
-    description:"E-Cell is a hub where innovation sparks and entrepreneurial dreams take shape. We bring together curious minds and aspiring changemakers to foster creativity and collaboration.",
+    title: "ACM GHRCEM",
+    description:"ACM is a hub where innovation sparks and entrepreneurial dreams take shape. We bring together curious minds and aspiring changemakers to foster creativity and collaboration.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         Collaborative Editing
@@ -35,7 +35,7 @@ const content = [
     description:
       "We envision a community where every student has the tools and support to transform their vision into reality, driving innovation and shaping a brighter future.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--blue-500),var(--blue-500))] flex items-center justify-center text-white">
         Version control
       </div>
     ),
@@ -48,8 +48,8 @@ export default function Page(): JSX.Element {
       <div className="bg-[rgba(16,18,24,1)]">
        <Hero />
        <div className="pl-10 pr-10">
-        <h1 className=" m-10 text-7xl text-center font-bold">About Us</h1>
-       <StickyScroll content={content} />
+        {/* <h1 className=" m-10 text-7xl text-center font-bold">About Us</h1>
+       <StickyScroll content={content} /> */}
        </div>
        <div>
        <h1 className=" m-10 text-7xl text-center font-bold">Testimonial</h1>
