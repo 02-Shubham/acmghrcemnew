@@ -108,8 +108,7 @@ export const Header = () => {
         ACM<br/> GHRCEM
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-      Join a dynamic community where innovation meets
-      opportunity. Through mentorship, competitions ,and hands-on workshops, we empower entrepreneurs to turn their ideas into reality.
+     ACMGHRCEM, we see a future where tech enthusiasts and innovators make a real impact on the world. Our goal is to support you in your journey through computing by offering valuable exposure, expert mentorship, a strong network, and the resources you need to turn your ideas into reality. ...
       </p>
     </div>
   );

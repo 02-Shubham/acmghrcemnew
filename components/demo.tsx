@@ -15,7 +15,7 @@ interface MediaContent {
 }
 
 const imageMedia: MediaContent = {
-  src: 'https://images.unsplash.com/photo-1682687982501-1e58ab814714?q=80&w=1280&auto=format&fit=crop',
+  src: '/main2.jpg',
   background:
     'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1920&auto=format&fit=crop',
   title: 'ACM GHRCEM',
