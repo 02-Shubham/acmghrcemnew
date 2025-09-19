@@ -16,91 +16,91 @@ export default Hero;
 
 export const products = [
   {
-    title: "Moonbeam",
+    title: "",
     link: "/",
     thumbnail:
       "/ACMlogo1.png",
   },
   {
-    title: "Cursor",
+    title: "",
     link: "/",
     thumbnail:
       "/event1.jpg", 
   },
   {
-    title: "Rogue",
+    title: "",
     link: "/",
-    thumbnail:"/event2.jpg",
+    thumbnail:"/event5.jpg",
   },
  
   {
-    title: "Editorially",
+    title: "",
     link: "/",
     thumbnail:"/event3.jpg",
   },
   {
-    title: "Editrix AI",
+    title: "",
     link: "/",
     thumbnail:
       "/event5.jpg",
   },
   {
-    title: "Pixel Perfect",
+    title: "",
     link: "/",
     thumbnail:
       "/event7.jpg",
   },
  
   {
-    title: "Algochurn",
+    title: "",
     link: "/",
     thumbnail:
       "/event6.jpg",
   },
   {
-    title: "Aceternity UI",
+    title: "",
     link: "/",
     thumbnail:
       "/event4.png",
   },
   {
-    title: "Tailwind Master Kit",
+    title: "",
     link: "/",
     thumbnail:
       "/event8.jpg",
   },
   {
-    title: "SmartBridge",
+    title: "",
     link: "/",
     thumbnail:
       "/event9.jpg",
   },
   {
-    title: "Renderwork Studio",
+    title: "",
     link: "/",
     thumbnail:
       "/event10.jpg",
   },
   {
-    title: "Creme Digital",
+    title: "",
     link: "/",
     thumbnail:
       "/event8.jpg",
   },
   {
-    title: "Golden Bells Academy",
+    title: "",
     link: "/",
     thumbnail:
       "/event6.jpg",
   },
   {
-    title: "Invoker Labs",
+    title: "",
     link: "/",
     thumbnail:
       "/event9.jpg",
   },
   {
-    title: "E Free Invoice",
+    title: "",
     link: "/",
     thumbnail:
       "/event5.jpg",

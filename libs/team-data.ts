@@ -124,6 +124,15 @@ export const teams: Teams = {
     
   ],
   "Public Relationals": [
+    {
+      id: 19,
+      name: "Mansi Patil",
+      role: "Public Relations Lead",
+      image: "img/team/Mansi.png",
+      bio: "Mansi is the public relations lead, managing communications and outreach for ACM.",
+      linkedin: "", // Add LinkedIn profile URL if available
+      mail: "", // Add email if available
+    },
     
   ],
   "Event Management": [

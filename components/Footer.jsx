@@ -7,9 +7,9 @@ import { FaInstagram, FaTwitter, FaGithub, FaYoutube, FaLinkedin } from 'react-i
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col md:flex-row justify-between items-center md:items-start p-8 bg-[rgba(16,18,24,1)] text-white">
+    <footer className="flex flex-col md:flex-row justify-evenly items-center md:items-start p-8 bg-[rgba(16,18,24,1)] text-white">
       <div className="flex flex-col items-center mb-8 md:mb-0">
-        <Image src={logo} alt="College Club" width={150} height={150} className='mr-20' />
+        <Image src={logo} alt="College Club" width={150} height={150}/>
 
         <div className=' flex space-x-4'>
           <Link href={"/"}>

@@ -3,6 +3,8 @@ import Hero from "@/components/hero-section"
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
 import { AnimatedTestimonialsDemo } from "@/components/Testimonial";
+import { ParallaxScroll } from "@/components/ui/parallax-scroll";
+import ParallaxScrollDemo from "./gallery/page";
 
 const content = [
   {
@@ -47,10 +49,6 @@ export default function Page(): JSX.Element {
     <div>
       <div className="bg-[rgba(16,18,24,1)]">
        <Hero />
-       <div className="pl-10 pr-10">
-        {/* <h1 className=" m-10 text-7xl text-center font-bold">About Us</h1>
-       <StickyScroll content={content} /> */}
-       </div>
        <div>
        <h1 className=" m-10 text-7xl text-center font-bold">Testimonial</h1>
        <AnimatedTestimonialsDemo/>
