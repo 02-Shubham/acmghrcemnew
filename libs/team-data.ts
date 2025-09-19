@@ -94,7 +94,7 @@ export const teams: Teams = {
      {
       id: 7,
       name: "Vaishnav Gaikwad",
-      role: " Finance Lead",
+      role: "Treasurer ",
       image: "img/team/Vaishnavi Vikas Gaikwad .jpg",
       bio: "Vaishnav is the finance lead, managing the financial planning and budgeting for ACM.",
       linkedin: "", // Add LinkedIn profile URL if available
@@ -146,11 +146,11 @@ export const teams: Teams = {
       mail: "",
     },
   ],
-  "Finance": [
+  "Treasurer": [
     {
       id: 33,
       name: "Vaishnavi Gaikwad",
-      role: "Lead",
+      role: "Treasurer Lead",
       image: "img/team/Vaishnavi Vikas Gaikwad .jpg",
       bio: "Vaishnavi is a dedicated finance manager with a focus on financial reporting.",
       linkedin: "www.linkedin.com/in/vaishnavi-gaikwad",
