@@ -4,7 +4,6 @@ import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
 import { AnimatedTestimonialsDemo } from "@/components/Testimonial";
 import { ParallaxScroll } from "@/components/ui/parallax-scroll";
-import ParallaxScrollDemo from "./gallery/page";
 
 const content = [
   {
