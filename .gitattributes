@@ -1,0 +1,2 @@
+# Git hooks must use LF endings so they run under sh on macOS/Linux/Git-Bash
+.githooks/** text eol=lf

@@ -1,0 +1,43 @@
+#!/bin/sh
+#
+# Pre-push guard: blocks accidental pushes to the protected "main" branch
+# *before* they leave your machine, with a friendly explanation.
+#
+# NOTE: This is only an early, friendly warning. The real enforcement is the
+# GitHub ruleset on the server — main is locked to the ACM Tech Lead there too.
+
+protected_branch="main"
+
+while read -r local_ref local_sha remote_ref remote_sha
+do
+  case "$remote_ref" in
+    refs/heads/"$protected_branch")
+      cat <<'EOF'
+
+  ============================================================
+   STOP  —  push to "main" is blocked
+  ============================================================
+
+  You cannot push directly to the "main" branch of this repo.
+  "main" is protected and only the ACM Tech Lead merges into it.
+
+  Do this instead:
+      1. Move your work to your own branch:
+             git checkout -b your-name/feature
+
+      2. Push that branch:
+             git push -u origin your-name/feature
+
+      3. Open a Pull Request on GitHub.
+         The Tech Lead will review, compare, and merge it.
+
+  Nothing was pushed. You're safe — just switch branches and retry.
+  ============================================================
+
+EOF
+      exit 1
+      ;;
+  esac
+done
+
+exit 0
