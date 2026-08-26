@@ -16,93 +16,78 @@ export default Hero;
 
 export const products = [
   {
-    title: "",
+    title: "ACM Welcome Session",
     link: "/",
-    thumbnail:
-      "/ACMlogo1.png",
+    thumbnail: "/ACMlogo1.png",
   },
   {
-    title: "",
+    title: "Code Odyssey Hackathon",
     link: "/",
-    thumbnail:
-      "/event1.jpg", 
+    thumbnail: "/event1.jpg", 
   },
   {
-    title: "",
+    title: "Tech Conclave & Panels",
     link: "/",
-    thumbnail:"/event5.jpg",
-  },
- 
-  {
-    title: "",
-    link: "/",
-    thumbnail:"/event3.jpg",
+    thumbnail: "/event5.jpg",
   },
   {
-    title: "",
+    title: "AI & ML Bootcamp",
     link: "/",
-    thumbnail:
-      "/event5.jpg",
+    thumbnail: "/event3.jpg",
   },
   {
-    title: "",
+    title: "Innovation Summit",
     link: "/",
-    thumbnail:
-      "/event7.jpg",
-  },
- 
-  {
-    title: "",
-    link: "/",
-    thumbnail:
-      "/event6.jpg",
+    thumbnail: "/event5.jpg",
   },
   {
-    title: "",
+    title: "Web3 & Cloud Workshop",
     link: "/",
-    thumbnail:
-      "/event4.png",
+    thumbnail: "/event7.jpg",
   },
   {
-    title: "",
+    title: "Cyber Security CTF",
     link: "/",
-    thumbnail:
-      "/event8.jpg",
+    thumbnail: "/event6.jpg",
   },
   {
-    title: "",
+    title: "National Tech Fest",
     link: "/",
-    thumbnail:
-      "/event9.jpg",
+    thumbnail: "/event4.png",
   },
   {
-    title: "",
+    title: "Developer Day Workshop",
     link: "/",
-    thumbnail:
-      "/event10.jpg",
+    thumbnail: "/event8.jpg",
   },
   {
-    title: "",
+    title: "Robotics & IoT Showcase",
     link: "/",
-    thumbnail:
-      "/event8.jpg",
+    thumbnail: "/event9.jpg",
   },
   {
-    title: "",
+    title: "Annual Tech Awards",
     link: "/",
-    thumbnail:
-      "/event6.jpg",
+    thumbnail: "/event10.jpg",
   },
   {
-    title: "",
+    title: "Open Source Hack Night",
     link: "/",
-    thumbnail:
-      "/event9.jpg",
+    thumbnail: "/event8.jpg",
   },
   {
-    title: "",
+    title: "UI/UX Design Jam",
     link: "/",
-    thumbnail:
-      "/event5.jpg",
+    thumbnail: "/event6.jpg",
+  },
+  {
+    title: "Data Science Sprint",
+    link: "/",
+    thumbnail: "/event9.jpg",
+  },
+  {
+    title: "Founders & Alumni Meetup",
+    link: "/",
+    thumbnail: "/event5.jpg",
   },
 ];

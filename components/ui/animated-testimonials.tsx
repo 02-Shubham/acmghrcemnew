@@ -1,9 +1,9 @@
 "use client";
 
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 
 type Testimonial = {
   quote: string;
@@ -11,6 +11,7 @@ type Testimonial = {
   designation: string;
   src: string;
 };
+
 export const AnimatedTestimonials = ({
   testimonials,
   autoplay = false,
@@ -34,69 +35,76 @@ export const AnimatedTestimonials = ({
 
   useEffect(() => {
     if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
+      const interval = setInterval(() => {
+        setActive((prev) => (prev + 1) % testimonials.length);
+      }, 6000);
       return () => clearInterval(interval);
     }
-  }, [autoplay]);
+  }, [autoplay, testimonials.length]);
 
-  const randomRotateY = () => {
-    return Math.floor(Math.random() * 21) - 10;
+  const getCardRotation = (index: number) => {
+    const rotations = [-4, 4, -6, 5, -3, 6, -5, 3];
+    return rotations[index % rotations.length];
   };
+
   return (
-    <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
-      <div className="relative grid grid-cols-1 md:grid-cols-2  gap-20">
-        <div>
-          <div className="relative h-80 w-full">
-            <AnimatePresence>
-              {testimonials.map((testimonial, index) => (
-                <motion.div
-                  key={testimonial.src}
-                  initial={{
-                    opacity: 0,
-                    scale: 0.9,
-                    z: -100,
-                    rotate: randomRotateY(),
-                  }}
-                  animate={{
-                    opacity: isActive(index) ? 1 : 0.7,
-                    scale: isActive(index) ? 1 : 0.95,
-                    z: isActive(index) ? 0 : -100,
-                    rotate: isActive(index) ? 0 : randomRotateY(),
-                    zIndex: isActive(index)
-                      ? 999
-                      : testimonials.length + 2 - index,
-                    y: isActive(index) ? [0, -80, 0] : 0,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    scale: 0.9,
-                    z: 100,
-                    rotate: randomRotateY(),
-                  }}
-                  transition={{
-                    duration: 0.4,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute inset-0 origin-bottom"
-                >
-                  <Image
-                    src={testimonial.src}
-                    alt={testimonial.name}
-                    width={500}
-                    height={500}
-                    draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
-                  />
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </div>
+    <div className="max-w-4xl mx-auto antialiased px-4 sm:px-6 lg:px-8 py-10">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center">
+        {/* Card Stack */}
+        <div className="relative h-72 sm:h-80 w-full max-w-sm mx-auto md:max-w-none">
+          <AnimatePresence>
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={testimonial.src}
+                initial={{
+                  opacity: 0,
+                  scale: 0.9,
+                  z: -100,
+                  rotate: getCardRotation(index),
+                }}
+                animate={{
+                  opacity: isActive(index) ? 1 : 0.65,
+                  scale: isActive(index) ? 1 : 0.94,
+                  z: isActive(index) ? 0 : -100,
+                  rotate: isActive(index) ? 0 : getCardRotation(index),
+                  zIndex: isActive(index)
+                    ? 40
+                    : testimonials.length + 2 - index,
+                  y: isActive(index) ? 0 : 8,
+                }}
+                exit={{
+                  opacity: 0,
+                  scale: 0.9,
+                  z: 100,
+                  rotate: getCardRotation(index),
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 25,
+                }}
+                className="absolute inset-0 origin-bottom rounded-3xl overflow-hidden glass-panel border border-white/15 shadow-2xl"
+              >
+                <Image
+                  src={testimonial.src}
+                  alt={testimonial.name}
+                  width={500}
+                  height={500}
+                  draggable={false}
+                  className="h-full w-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
-        <div className="flex justify-between flex-col py-4">
+
+        {/* Quote & Author Info */}
+        <div className="flex flex-col justify-between py-2">
           <motion.div
             key={active}
             initial={{
-              y: 20,
+              y: 15,
               opacity: 0,
             }}
             animate={{
@@ -104,59 +112,52 @@ export const AnimatedTestimonials = ({
               opacity: 1,
             }}
             exit={{
-              y: -20,
+              y: -15,
               opacity: 0,
             }}
             transition={{
-              duration: 0.2,
-              ease: "easeInOut",
+              type: "spring",
+              stiffness: 350,
+              damping: 30,
             }}
           >
-            <h3 className="text-2xl font-bold dark:text-white text-white">
-              {testimonials[active].name}
-            </h3>
-            <p className="text-sm text-gray-200 dark:text-neutral-500">
-              {testimonials[active].designation}
-            </p>
-            <motion.p className="text-lg text-gray-300 mt-8 dark:text-neutral-300">
-              {testimonials[active].quote.split(" ").map((word, index) => (
-                <motion.span
-                  key={index}
-                  initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
-                    y: 5,
-                  }}
-                  animate={{
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  transition={{
-                    duration: 0.2,
-                    ease: "easeInOut",
-                    delay: 0.02 * index,
-                  }}
-                  className="inline-block"
-                >
-                  {word}&nbsp;
-                </motion.span>
-              ))}
+            <div className="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-4">
+              <Quote className="w-5 h-5" />
+            </div>
+
+            <motion.p className="text-base sm:text-xl text-gray-200 leading-relaxed font-normal">
+              &ldquo;{testimonials[active].quote}&rdquo;
             </motion.p>
+
+            <div className="mt-6 pt-4 border-t border-white/10">
+              <h3 className="text-xl font-bold text-white tracking-tight">
+                {testimonials[active].name}
+              </h3>
+              <p className="text-xs sm:text-sm text-blue-400 font-medium mt-0.5">
+                {testimonials[active].designation}
+              </p>
+            </div>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+
+          {/* Navigation Controls */}
+          <div className="flex items-center gap-3 pt-8">
             <button
               onClick={handlePrev}
-              className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
+              aria-label="Previous Testimonial"
+              className="h-10 w-10 rounded-full bg-white/5 hover:bg-white/10 active:scale-[0.95] border border-white/10 flex items-center justify-center text-white transition-all apple-btn"
             >
-              <IconArrowLeft className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
+              <ArrowLeft className="h-4 w-4" />
             </button>
             <button
               onClick={handleNext}
-              className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
+              aria-label="Next Testimonial"
+              className="h-10 w-10 rounded-full bg-white/5 hover:bg-white/10 active:scale-[0.95] border border-white/10 flex items-center justify-center text-white transition-all apple-btn"
             >
-              <IconArrowRight className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
+              <ArrowRight className="h-4 w-4" />
             </button>
+            <span className="text-xs text-gray-400 font-medium ml-2">
+              {active + 1} / {testimonials.length}
+            </span>
           </div>
         </div>
       </div>

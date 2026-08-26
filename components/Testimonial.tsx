@@ -1,3 +1,5 @@
+"use client";
+
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
 export function AnimatedTestimonialsDemo() {
@@ -7,7 +9,7 @@ export function AnimatedTestimonialsDemo() {
         "Being part of ACM GHRCEM helped me gain the confidence to take my entrepreneurial ideas forward.",
       name: "Sanjana Rajput",
       designation: "Btech-AIML",
-      src: "/img/team/sanjana rajput.png",
+      src: "/img/team/sanjana-rajput.png",
     },
     {
       quote:

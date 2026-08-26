@@ -1,133 +1,36 @@
 "use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import * as HoverCard from "@radix-ui/react-hover-card";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // import icons for the hamburger menu
-import Link from "next/link";
-// import logo from '../public/ACMlogo.jpg';
-import Image from 'next/image';
+import NavbarApple from "./NavbarApple";
+import NavbarApple2 from "./NavbarApple2";
+import NavbarApple3 from "./NavbarApple3";
 
-function Navbar({ className }: { className?: string }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const menuItems = (
-    <>
-      <motion.div
-        whileHover={{ scale: 1.1, color: "#1e90ff" }}
-        whileTap={{ scale: 0.9 }}
-        className="mx-4 cursor-pointer"
-      >
-        <Link href="/">
-          <span>Home</span>
-        </Link>
-      </motion.div>
-      <motion.div
-        whileHover={{ scale: 1.1, color: "#1e90ff" }}
-        whileTap={{ scale: 0.9 }}
-        className="mx-4 cursor-pointer"
-      >
-        <Link href="/aboutus">
-        <span>About Us</span>
-        </Link>
-      </motion.div>
-      <motion.div
-        whileHover={{ scale: 1.1, color: "#1e90ff" }}
-        whileTap={{ scale: 0.9 }}
-        className="mx-4 cursor-pointer"
-      >
-        <Link href="/events">
-        <span>Events</span>
-        </Link>
-      </motion.div>
-      <motion.div
-        whileHover={{ scale: 1.1, color: "#1e90ff" }}
-        whileTap={{ scale: 0.9 }}
-        className="mx-4 cursor-pointer"
-      >
-        <HoverCard.Root openDelay={100} closeDelay={100}>
-          <HoverCard.Trigger asChild>
-            <Link href={"/teams"}>
-            <span>Meet Our Team</span>
-            </Link>
-          </HoverCard.Trigger>
-        </HoverCard.Root>
-      </motion.div>
-      <motion.div
-        whileHover={{ scale: 1.1, color: "#1e90ff" }}
-        whileTap={{ scale: 0.9 }}
-        className="mx-4 cursor-pointer"
-      >
-        <Link href="/contactus">
-        <span>Contact Us</span>
-        </Link>
-      </motion.div>
-      <motion.div
-        whileHover={{ scale: 1.1, color: "#1e90ff" }}
-        whileTap={{ scale: 0.9 }}
-        className="mx-4 cursor-pointer"
-      >
-        <span>Blogs</span>
-      </motion.div>
-    </>
-  );
-
+export default function Navbar() {
   return (
-    <>
-      {/* Big Screen Navbar */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        className="w-[100vw] fixed top-0 z-50 mt-8 text-white  flex justify-center items-center"
-      >
-        <div
-          className="w-8/12 p-5  bg-black rounded-full border-[#464646] border-[1px] hidden xl:inline-block"
-          id="navBarDiv"
-        >
-          <div className="w-full h-full flex items-center justify-between px-5">
-            {menuItems}
-          </div>
-        </div>
-      </motion.div>
-
-      {/* Hamburger Navbar */}
-      <div className="w-[100vw] fixed top-0 z-50 mt-8 text-white  xl:hidden flex justify-between items-center px-4">
-        <div className="flex items-center">
-        {/* <Image src={logo} alt="College Club" width={50} height={50} /> */}
-          {/* <span className="text-2xl font-bold"></span> */}
-        </div>
-        <div className="flex items-center">
-          {isOpen ? (
-            <AiOutlineClose
-              size={30}
-              onClick={toggleMenu}
-              className="cursor-pointer"
-            />
-          ) : (
-            <AiOutlineMenu
-              size={30}
-              onClick={toggleMenu}
-              className="cursor-pointer"
-            />
-          )}
-        </div>
-        {isOpen && (
-          <motion.div
-            // initial={{ opacity: 0, y: -20 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 0.5 }}
-            className="absolute top-16 left-0 w-full bg-black text-white p-10 gap-5 flex flex-col"
-          >
-            {menuItems}
-          </motion.div>
-        )}
+    <div className="fixed top-0 inset-x-0 z-50 flex flex-col gap-6 pt-4 pointer-events-none">
+      
+      {/* Variant 1: Current Apple Design */}
+      <div className="pointer-events-auto flex flex-col items-center w-full">
+         <div className="bg-white/10 text-white/70 backdrop-blur-md px-3 py-1 rounded-full text-[9px] uppercase tracking-widest font-bold mb-2 border border-white/5 shadow-xl">
+           Variant 1: Classic Dark Apple
+         </div>
+         <NavbarApple />
       </div>
-    </>
+      
+      {/* Variant 2: Dark Apple with Subtitle */}
+      <div className="pointer-events-auto flex flex-col items-center w-full">
+         <div className="bg-white/10 text-white/70 backdrop-blur-md px-3 py-1 rounded-full text-[9px] uppercase tracking-widest font-bold mb-2 border border-white/5 shadow-xl">
+           Variant 2: Two-Line Header (Dark)
+         </div>
+         <NavbarApple2 />
+      </div>
+
+      {/* Variant 3: Light Glass with Dark Logo & Subtitle */}
+      <div className="pointer-events-auto flex flex-col items-center w-full">
+         <div className="bg-black/40 text-white backdrop-blur-md px-3 py-1 rounded-full text-[9px] uppercase tracking-widest font-bold mb-2 border border-white/10 shadow-xl">
+           Variant 3: Light Material & Dark Logo
+         </div>
+         <NavbarApple3 />
+      </div>
+
+    </div>
   );
 }
-
-export default Navbar;
